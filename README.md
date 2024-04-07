@@ -1,9 +1,4 @@
-# Laravel E-Commerce App
 
-## Introduction
-This is a very basic Laravel Based E-Commerce Application. where admin and list products with categories and users can search/find them and buy them with 3 payment options...
-
-## Getting Started
 
 ### Prerequisites
 To run this Laravel app, you need to have the following software installed on your machine:
@@ -13,7 +8,7 @@ To run this Laravel app, you need to have the following software installed on yo
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/hilalahmad0101/ecomarce-website.git
+   git clone https://github.com/hodaccuong06/StoreBook.git
    ```
 2. Change into the project directory:
     ```bash
@@ -24,42 +19,30 @@ To run this Laravel app, you need to have the following software installed on yo
     ```bash
     composer install
     ```
+    ```bash
+    npm install
+    ```
 4. Create a copy of the .env.example file and rename it to .env. Update the database and other configurations as needed.
 5. Generate an application key:
     ```bash
     php artisan key:generate
     ```
-6. Migrate the database:
+6. Add database in phpAdmin: (Create a table named laravel on phpAdmin)
     ```bash
-    php artisan migrate
+    Select laravel -> select enter - select file "laravel.sql" then input
+    ![image](https://github.com/hodaccuong06/StoreBook/assets/61493128/9b64f455-7228-428d-8493-7ad4f97ac037)
+
     ```
 7. Serve the application:
     ```bash
     php artisan serve
     ```
-10. Visit [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser to view the app.
-
-## Contributing
-If you would like to contribute to this project feel free to do so...
-
-        1. Social media login options
-        2. Product search functionality with Advanced search options
-        3. product reviews/ratings
-        4. Save for later
-        5. Payment gateway integration
-        6. Order summary and order confirmation
-        7. payment with paypal and credit card
-        8. Cancel and return and track orders
-        9. Email and SMS notifications for order confirmation, shipping updates, etc.
-        10. Two-factor authentication
-        11. Sales analytics
-        12. Social sharing of products
-        13. Promo codes and discoints
+8. Visit [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser to view the app.
 
 
-## License
-This project is licensed under the MIT License.
 
-## Finally
-Give a Start⭐ if you liked it ✌✌
+## If you want to automatically delete bills for orders over three months old, then:
+Create a new terminal and enter -> php artisan schedule:work
+To check and run the delete command every minute
+
 
