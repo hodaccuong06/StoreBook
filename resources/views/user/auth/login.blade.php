@@ -73,10 +73,11 @@ Login
             </div>
             @endsection
     <script>
+        document.addEventListener("DOMContentLoaded", function() {
         const passwordInput = document.getElementById('login-pass');
         const showPasswordCheckbox = document.getElementById('show-password-checkbox');
-    
-        showPasswordCheckbox.addEventListener('change', function () {
+
+        showPasswordCheckbox.addEventListener('change', function() {
             passwordInput.type = this.checked ? 'text' : 'password';
         });
         ///
