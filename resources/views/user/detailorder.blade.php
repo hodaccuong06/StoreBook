@@ -21,7 +21,7 @@
                   <div class="col text-center">
 
                     <!-- Logo -->
-                    <img class="img-fluid mb-5 mh-70" alt="Logo" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634218044logoforsite.png">
+                    <img class="img-fluid mb-5 mh-70" alt="Logo" src="http://127.0.0.1:8000/storage/media/PPsmYSBkfKgsGfIGpAiPNMp5RO1o0x8ZPVY9Wson.png">
 
                   </div>
                 </div> <!-- / .row -->
