@@ -47,7 +47,7 @@ Login
                                         @enderror
                                 </div>
                                 <div>
-                                <input type="checkbox" class="checkbox" name="" id="show-password-checkbox"> <label for="show-password-checkbox">Show password</label> 
+                                <input type="checkbox" class="checkbox" name="" id="show-password-checkbox"> <label for="show-password-checkbox">Hiển thị mật khẩu</label> 
                                 </div>
                                 <div>  <a href="{{ route('user.forgot') }}">Quên Mật khẩu</a></div>
                                
@@ -73,12 +73,14 @@ Login
             </div>
             @endsection
     <script>
+        document.addEventListener("DOMContentLoaded", function() {
         const passwordInput = document.getElementById('login-pass');
         const showPasswordCheckbox = document.getElementById('show-password-checkbox');
-    
-        showPasswordCheckbox.addEventListener('change', function () {
+
+        showPasswordCheckbox.addEventListener('change', function() {
             passwordInput.type = this.checked ? 'text' : 'password';
         });
+    });
         ///
             function Validtor(obj){
                     var allRules = {};
@@ -187,7 +189,7 @@ Login
                 selector: idEmail,
                 test1: function(value){
                     var regex = /^\w+([\.-]?\w+)*@/;
-                    return regex.test(value) ? undefined : message || "Vui lòng nhập email chính xác"
+                    return regex.test(value) ? undefined : message || "Please enter correct email"
                 }
             }
         }
@@ -205,7 +207,7 @@ Login
             form: "#form-1",
             errorMessage: ".form-message",
             rules: [
-                Validtor.isRequire('#reg-email', "Vui lòng nhập email"),
+                Validtor.isRequire('#reg-email', "Please enter correct email"),
                 Validtor.isEmail('#reg-email',"Please enter the correct email"),
                 Validtor.isPassword('#login-pass',8 )
             ]
