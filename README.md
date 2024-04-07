@@ -27,17 +27,30 @@ To run this Laravel app, you need to have the following software installed on yo
     ```bash
     php artisan key:generate
     ```
-6. Add database in phpAdmin: (Create a table named laravel on phpAdmin)
+6. Disconnect from storage
     ```bash
-    Select laravel -> select enter - select file "laravel.sql" then input
-    ![image](https://github.com/hodaccuong06/StoreBook/assets/61493128/9b64f455-7228-428d-8493-7ad4f97ac037)
+    rm public/storage
+    Enter A
 
     ```
-7. Serve the application:
+7. Connect to storage
     ```bash
-    php artisan serve
+    php artisan storage:link
+
     ```
-8. Visit [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser to view the app.
+8. Add database in phpAdmin: (Create a table named laravel on phpAdmin)
+    ```bash
+    Select laravel -> select enter - select file "laravel.sql" then input
+
+    ```
+9. Serve the application:
+
+    Create a new terminal->npm run dev
+
+    ```bash
+    php artisan serve (To run the server)
+    ```
+10. Visit [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser to view the app.
 
 
 
